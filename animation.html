@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS animatin</title>
+                
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Engagement&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  
+
+   
+</head>
+    <style>
+
+    body{
+        margin: 0;
+        display: flex;
+        justify-content: center;
+         height: 100vh;
+         font-family: Arial, Helvetica, sans-serif;
+        align-items: center;
+     
+    }
+    
+ul {
+
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style: none;
+} 
+
+ul li a {
+  text-decoration: none;
+  color: #272727;
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  margin: 0px 10px;
+  position: relative;
+  transition: all .5s;
+}
+a:hover {
+  background-color: #e91e63;
+  color: white;
+}
+    a::before {
+      content: '';
+      position: absolute;
+      bottom: 12px;
+      left: 12px;
+      width: 12px;
+      height: 12px;
+      border: 3px solid #e91e63;
+      border-width: 0 0 3px 3px;
+      opacity: 0;
+      transition: all 0.3s;
+
+    }
+a:hover::before {
+  opacity: 1;
+  bottom: -8px;
+  left: -8px;
+}
+a::after {
+      content: '';
+      position: absolute;
+     top: 12px;
+   right: 12px;
+      width: 12px;
+      height: 12px;
+      border: 3px solid #e91e63;
+      border-width:  3px 3px 0 0;
+      opacity: 0;
+      transition: all 0.3s;
+
+    }
+    a:hover::after{
+  opacity: 1;
+top: -8px;
+  right: -8px;
+}
+
+</style>
+</head> 
+<body>
+<ul>
+  <li><a href="#">Home</a></li>
+  <li><a href="#">About</a></li>
+  <li><a href="#">Services</a></li>
+  <li><a href="#">Portfolio</a></li>
+  <li><a href="#">Contact</a></li>
+</ul>
+
+</body> 
+</html>
